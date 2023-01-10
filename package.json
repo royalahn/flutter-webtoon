@@ -1,0 +1,18 @@
+{
+  "name": "flutter-webtoon",
+  "scripts": {
+    "predeploy": "flutter build web --base-href /flutter-webtoon/ --release",
+    "deploy": "gh-pages -d build/web"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/royalahn/flutter-webtoon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/royalahn/flutter-webtoon/issues"
+  },
+  "homepage": "https://royalahn.github.io/royalahn/flutter-webtoon",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
