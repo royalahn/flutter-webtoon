@@ -81,8 +81,8 @@ class _DetailScreenState extends State<DetailScreen> {
         title: Text(
           widget.title,
           style: const TextStyle(
+            fontFamily: 'BMDOHYEON',
             fontSize: 22,
-            fontWeight: FontWeight.bold,
           ),
         ),
       ),
