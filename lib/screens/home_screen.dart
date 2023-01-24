@@ -19,7 +19,8 @@ class HomeScreen extends StatelessWidget {
         title: const Text(
           "어늘의 웹툰",
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),

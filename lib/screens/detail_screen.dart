@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_webtoon/models/webtoon_detail_model.dart';
 import 'package:flutter_webtoon/models/webtoon_episode_model.dart';
 import 'package:flutter_webtoon/services/api_service.dart';
 import 'package:flutter_webtoon/widgets/episode_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class DetailScreen extends StatefulWidget {
   final String title, thumb, id;
@@ -81,7 +81,8 @@ class _DetailScreenState extends State<DetailScreen> {
         title: Text(
           widget.title,
           style: const TextStyle(
-            fontSize: 24,
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
@@ -125,7 +126,10 @@ class _DetailScreenState extends State<DetailScreen> {
                       children: [
                         Text(
                           snapshot.data!.about,
-                          style: const TextStyle(fontSize: 16),
+                          style: const TextStyle(
+                            fontSize: 16,
+                            height: 1.4,
+                          ),
                         ),
                         const SizedBox(
                           height: 15,
